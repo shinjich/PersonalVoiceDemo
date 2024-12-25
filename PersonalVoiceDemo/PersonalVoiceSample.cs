@@ -31,7 +31,7 @@ public class PersonalVoiceSample
 		{
 			var personalVoice = await client.GetPersonalVoiceAsync(pvId).ConfigureAwait(false);
 			await SynthesisAsync("en-US", "Hi, my name is Shinji Chiba. This is my personl voice. I only spoke in Japanese, but you will hear me speaking in English. Thank you.", null, personalVoice.SpeakerProfileId);
-//			await SynthesisAsync("zh-CN", "嗨，我叫千叶真司．这是我个人的声音．我只用日语说话，但你会听到我用英语说话．谢谢．", "out.wav", personalVoice.SpeakerProfileId);
+//			await SynthesisAsync("zh-CN", "你好。我的名字是千叶慎二。这是我个人的声音。我用日语说的话，你会听到中文。谢谢。", "out.wav", personalVoice.SpeakerProfileId);
 		}
 		catch (Exception ex)
 		{
